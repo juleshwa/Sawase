@@ -31,6 +31,7 @@
         android:textAppearance="@android:style/TextAppearance"
         android:textColor="#ffffff"
         android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintHorizontal_bias="0.500"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -41,7 +42,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="120dp"
-        android:fontFamily="sans-serif-condensed"
+        android:fontFamily="cursive"
         android:text="@string/sawase"
         android:textAppearance="@android:style/TextAppearance"
         android:textColor="#ffffff"
@@ -104,7 +105,8 @@
             android:textSize="18sp"
             android:textStyle="bold"
             tools:layout_editor_absoluteX="142dp"
-            tools:layout_editor_absoluteY="150dp" />
+            tools:layout_editor_absoluteY="150dp"
+            android:onClick="ToastDaftar"/>
 
         <Button
             android:id="@+id/btn_msk"
@@ -117,7 +119,8 @@
             android:textSize="18sp"
             android:textStyle="bold"
             tools:layout_editor_absoluteX="142dp"
-            tools:layout_editor_absoluteY="150dp" />
+            tools:layout_editor_absoluteY="150dp"
+            android:onClick="LoginMasuk"/>
 
     </LinearLayout>
 

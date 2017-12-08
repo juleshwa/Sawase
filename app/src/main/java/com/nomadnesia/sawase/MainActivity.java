@@ -12,8 +12,11 @@ import android.support.v7.widget.Toolbar;
 import java.util.ArrayList;
 import java.util.List;
 
+import layout.FasilitasKesehatan;
+import layout.FasilitasUmum;
 import layout.KomunitasSenior;
 import layout.RuangPublik;
+import layout.TombolDarurat;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -40,8 +43,11 @@ public class MainActivity extends AppCompatActivity {
 
     private void setupViewPager (ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new RuangPublik(), "Ruang Publik");
-        adapter.addFragment(new KomunitasSenior(), "Komunitas Senior");
+        adapter.addFragment(new RuangPublik(), "Tempat Publik");
+        adapter.addFragment(new FasilitasUmum(), "FaSum");
+        adapter.addFragment(new FasilitasKesehatan(), "FasKes");
+        adapter.addFragment(new KomunitasSenior(), "Komunitas");
+        adapter.addFragment(new TombolDarurat(), "Tombol Darurat");
         viewPager.setAdapter(adapter);
     }
 
